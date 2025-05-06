@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmailJS Setup Instructions</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      color: #2E3192;
+      border-bottom: 2px solid #2E3192;
+      padding-bottom: 10px;
+    }
+    h2 {
+      color: #2E3192;
+      margin-top: 30px;
+    }
+    code {
+      background-color: #f5f5f5;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+    pre {
+      background-color: #f5f5f5;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    .note {
+      background-color: #fff8e1;
+      border-left: 4px solid #ffc107;
+      padding: 15px;
+      margin: 20px 0;
+    }
+    ol li, ul li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>EmailJS Setup Instructions for HCELL Engineering Contact Form</h1>
+  
+  <p>This document provides step-by-step instructions for setting up EmailJS to make your contact form functional.</p>
+  
+  <div class="note">
+    <strong>Note:</strong> This file is for your reference only and should not be uploaded to your public website.
+  </div>
+  
+  <h2>Step 1: Create an EmailJS Account</h2>
+  <ol>
+    <li>Go to <a href="https://www.emailjs.com/" target="_blank">https://www.emailjs.com/</a> and sign up for a free account.</li>
+    <li>The free plan allows 200 emails per month, which should be sufficient for most small business websites.</li>
+  </ol>
+  
+  <h2>Step 2: Create an Email Service</h2>
+  <ol>
+    <li>In your EmailJS dashboard, go to "Email Services" and click "Add New Service".</li>
+    <li>Choose your email provider (Gmail, Outlook, etc.) and follow the instructions to connect your account.</li>
+    <li>Name your service (e.g., "HCELL Contact Form") and save it.</li>
+    <li>Note down the <strong>Service ID</strong> - you'll need this later.</li>
+  </ol>
+  
+  <h2>Step 3: Create an Email Template</h2>
+  <ol>
+    <li>Go to "Email Templates" and click "Create New Template".</li>
+    <li>Name your template (e.g., "HCELL Contact Form Template").</li>
+    <li>For the best results, use our pre-designed HTML template:
+      <ol>
+        <li>Download the <code>email-template.html</code> file from your project.</li>
+        <li>In EmailJS, select "Create Template" → "From Scratch".</li>
+        <li>Click on the "Code" tab in the template editor.</li>
+        <li>Copy and paste the entire content of <code>email-template.html</code> into the code editor.</li>
+        <li>Click "Save" to save your template.</li>
+      </ol>
+    </li>
+    <li>Note down the <strong>Template ID</strong>.</li>
+  </ol>
+  
+  <h2>Step 4: Get Your Public Key</h2>
+  <ol>
+    <li>Go to "Account" → "API Keys".</li>
+    <li>Copy your <strong>Public Key</strong>.</li>
+  </ol>
+  
+  <h2>Step 5: Update Your Code</h2>
+  <ol>
+    <li>Open the <code>app/contact/page.tsx</code> file in your project.</li>
+    <li>Replace the following placeholders with your actual values:
+      <ul>
+        <li>Replace <code>"YOUR_PUBLIC_KEY"</code> with your EmailJS Public Key</li>
+        <li>Replace <code>"YOUR_SERVICE_ID"</code> with your EmailJS Service ID</li>
+        <li>Replace <code>"YOUR_TEMPLATE_ID"</code> with your EmailJS Template ID</li>
+      </ul>
+    </li>
+  </ol>
+  
+  <h2>Step 6: Test Your Form</h2>
+  <ol>
+    <li>After deploying your website, test the contact form by submitting a test message.</li>
+    <li>Check your email to ensure you receive the form submission correctly.</li>
+    <li>Verify that the success message appears after submission.</li>
+  </ol>
+  
+  <h2>Troubleshooting</h2>
+  <ul>
+    <li>If emails are not being received, check your spam folder.</li>
+    <li>Verify that all IDs and keys are correctly entered in the code.</li>
+    <li>Check the EmailJS dashboard for any error logs.</li>
+    <li>If you exceed the free tier limit (200 emails/month), you'll need to upgrade your EmailJS plan.</li>
+  </ul>
+  
+  <div class="note">
+    <strong>Security Note:</strong> Your EmailJS Public Key is designed to be used on the client side and is safe to include in your code. However, never share your Private Key.
+  </div>
+</body>
+</html>

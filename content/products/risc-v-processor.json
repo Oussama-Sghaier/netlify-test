@@ -1,0 +1,51 @@
+{
+  "title": "RISC-V Processor",
+  "slug": "risc-v-processor",
+  "featuredImage": "/images/risc-v-processor.jpg",
+  "description": "High-performance, energy-efficient RISC-V processor cores for next-generation applications",
+  "overview": "HCELL Engineering's RISC-V processor is a cutting-edge implementation of the open-standard RISC-V instruction set architecture. Our processor cores deliver exceptional performance, energy efficiency, and flexibility for a wide range of applications from embedded systems to high-performance computing.\n\nWith customizable features and comprehensive development tools, our RISC-V processors provide a future-proof foundation for your next-generation products.",
+  "keyFeatures": [
+    {
+      "title": "High Performance",
+      "description": "Advanced microarchitecture delivering exceptional performance with optimized pipeline design and branch prediction.",
+      "icon": "Cpu"
+    },
+    {
+      "title": "Energy Efficient",
+      "description": "Designed for minimal power consumption with advanced power management features, ideal for battery-powered and embedded applications.",
+      "icon": "Zap"
+    },
+    {
+      "title": "Customizable",
+      "description": "Highly configurable architecture with optional extensions and custom instructions to meet specific application requirements.",
+      "icon": "Layers"
+    }
+  ],
+  "technicalSpecs": "## HC-RV32E: Embedded Processor\n\n- RV32E base integer instruction set\n- Optional M extension for multiplication/division\n- 2-stage pipeline architecture\n- Ultra-low power consumption: <10mW at 100MHz\n- Compact silicon footprint: <0.02mm²\n\n## HC-RV64GC: General Purpose Processor\n\n- RV64GC instruction set (G+C extensions)\n- 5-stage pipeline with out-of-order execution\n- L1 and L2 cache support\n- Hardware floating-point unit\n- Advanced power management features\n\n## HC-RV64X: High-Performance Processor\n\n- RV64GC with custom vector extensions\n- Superscalar architecture with 8-stage pipeline\n- Advanced branch prediction and speculative execution\n- Multi-core support with coherent cache\n- Hardware acceleration for AI/ML workloads",
+  "applications": [
+    {
+      "title": "Embedded Systems",
+      "description": "IoT devices, sensors, and microcontrollers",
+      "image": "/images/embedded-systems.jpg"
+    },
+    {
+      "title": "Edge Computing",
+      "description": "Local data processing and AI inference",
+      "image": "/images/edge-computing.jpg"
+    },
+    {
+      "title": "Mobile Devices",
+      "description": "Smartphones, tablets, and wearables",
+      "image": "/images/mobile-devices.jpg"
+    },
+    {
+      "title": "High-Performance Computing",
+      "description": "Data centers and specialized computing applications",
+      "image": "/images/high-performance-computing.jpg"
+    }
+  ],
+  "ctaHeading": "Ready to Power Your Next Project with RISC-V?",
+  "ctaDescription": "Contact our team to discuss how our RISC-V processors can meet your specific requirements.",
+  "ctaButtonText": "Get in Touch Today",
+  "ctaButtonLink": "/contact"
+}

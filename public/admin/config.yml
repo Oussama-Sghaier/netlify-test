@@ -1,0 +1,176 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+# When using the Netlify CMS proxy server
+local_backend: true
+
+# Media and public folders
+media_folder: "public/images/uploads" # Media will be stored in this folder
+public_folder: "/images/uploads" # The src attribute for uploaded media
+
+# Publish mode
+publish_mode: editorial_workflow # Allows you to save drafts before publishing
+
+# Site URL
+site_url: https://hcellengineering.com
+
+# Collections - define the structure for different content types
+collections:
+  # Home page content
+  - name: "home"
+    label: "Home Page"
+    folder: "content/home"
+    create: false # Only allow editing, not creating
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Hero Heading", name: "heroHeading", widget: "string" }
+      - { label: "Hero Description", name: "heroDescription", widget: "text" }
+      - { label: "Hero Image", name: "heroImage", widget: "image" }
+      - label: "Featured Products"
+        name: "featuredProducts"
+        widget: "list"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Link", name: "link", widget: "string" }
+      - label: "Features"
+        name: "features"
+        widget: "list"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Icon", name: "icon", widget: "select", options: ["Cpu", "Zap", "Shield"] }
+      - { label: "CTA Heading", name: "ctaHeading", widget: "string" }
+      - { label: "CTA Description", name: "ctaDescription", widget: "text" }
+      - { label: "CTA Button Text", name: "ctaButtonText", widget: "string" }
+      - { label: "CTA Button Link", name: "ctaButtonLink", widget: "string" }
+
+  # About page content
+  - name: "about"
+    label: "About Page"
+    folder: "content/about"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Hero Heading", name: "heroHeading", widget: "string" }
+      - { label: "Hero Description", name: "heroDescription", widget: "text" }
+      - { label: "Company Story", name: "companyStory", widget: "markdown" }
+      - { label: "Company Image", name: "companyImage", widget: "image" }
+      - label: "Mission"
+        name: "mission"
+        widget: "object"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Points", name: "points", widget: "list" }
+      - label: "Vision"
+        name: "vision"
+        widget: "object"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Points", name: "points", widget: "list" }
+      - label: "Team Members"
+        name: "teamMembers"
+        widget: "list"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Position", name: "position", widget: "string" }
+          - { label: "Bio", name: "bio", widget: "text" }
+          - { label: "Image", name: "image", widget: "image" }
+
+  # Products collection
+  - name: "products"
+    label: "Products"
+    folder: "content/products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string", pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Must be a valid URL slug"] }
+      - { label: "Featured Image", name: "featuredImage", widget: "image" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Overview", name: "overview", widget: "markdown" }
+      - label: "Key Features"
+        name: "keyFeatures"
+        widget: "list"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Icon", name: "icon", widget: "select", options: ["Cpu", "Zap", "Shield", "Layers"] }
+      - label: "Technical Specifications"
+        name: "technicalSpecs"
+        widget: "markdown"
+      - label: "Applications"
+        name: "applications"
+        widget: "list"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Image", name: "image", widget: "image" }
+      - { label: "CTA Heading", name: "ctaHeading", widget: "string" }
+      - { label: "CTA Description", name: "ctaDescription", widget: "text" }
+      - { label: "CTA Button Text", name: "ctaButtonText", widget: "string", default: "Get in Touch Today" }
+      - { label: "CTA Button Link", name: "ctaButtonLink", widget: "string", default: "/contact" }
+
+  # Contact page content
+  - name: "contact"
+    label: "Contact Page"
+    folder: "content/contact"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Hero Heading", name: "heroHeading", widget: "string" }
+      - { label: "Hero Description", name: "heroDescription", widget: "text" }
+      - label: "Contact Information"
+        name: "contactInfo"
+        widget: "object"
+        fields:
+          - { label: "Address", name: "address", widget: "text" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+      - label: "Business Hours"
+        name: "businessHours"
+        widget: "list"
+        fields:
+          - { label: "Days", name: "days", widget: "string" }
+          - { label: "Hours", name: "hours", widget: "string" }
+      - { label: "Form Heading", name: "formHeading", widget: "string" }
+      - { label: "Map Heading", name: "mapHeading", widget: "string" }
+      - { label: "Map Description", name: "mapDescription", widget: "text" }
+
+  # Site settings
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "General Settings"
+        name: "general"
+        file: "content/settings/general.json"
+        fields:
+          - { label: "Site Title", name: "siteTitle", widget: "string" }
+          - { label: "Site Description", name: "siteDescription", widget: "text" }
+          - { label: "Logo", name: "logo", widget: "image" }
+          - label: "Social Media"
+            name: "socialMedia"
+            widget: "object"
+            fields:
+              - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
+              - { label: "Twitter", name: "twitter", widget: "string", required: false }
+              - { label: "Facebook", name: "facebook", widget: "string", required: false }
+      - label: "Footer"
+        name: "footer"
+        file: "content/settings/footer.json"
+        fields:
+          - { label: "Company Description", name: "companyDescription", widget: "text" }
+          - label: "Quick Links"
+            name: "quickLinks"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+          - { label: "Copyright Text", name: "copyrightText", widget: "string" }

@@ -1,0 +1,41 @@
+{
+  "title": "HCELL Engineering - Innovative Engineering Solutions",
+  "heroHeading": "Innovative Engineering Solutions",
+  "heroDescription": "HCELL Engineering delivers cutting-edge integrated circuit solutions for tomorrow's technological challenges.",
+  "heroImage": "/images/circuit-board.jpg",
+  "featuredProducts": [
+    {
+      "title": "Avionics IP",
+      "description": "High-reliability integrated circuits designed specifically for aerospace applications, meeting the strictest industry standards.",
+      "image": "/images/avionics-ip.jpg",
+      "link": "/products/avionics-ip"
+    },
+    {
+      "title": "RISC-V Processor",
+      "description": "High-performance, energy-efficient RISC-V processor cores for next-generation applications from embedded systems to high-performance computing.",
+      "image": "/images/risc-v-processor.jpg",
+      "link": "/products/risc-v-processor"
+    }
+  ],
+  "features": [
+    {
+      "title": "Advanced Technology",
+      "description": "Our cutting-edge integrated circuits are designed with the latest technology to ensure optimal performance.",
+      "icon": "Cpu"
+    },
+    {
+      "title": "Energy Efficient",
+      "description": "Our products are designed with energy efficiency in mind, reducing power consumption without sacrificing performance.",
+      "icon": "Zap"
+    },
+    {
+      "title": "Reliability & Security",
+      "description": "We prioritize reliability and security in all our designs, ensuring your systems operate safely and consistently.",
+      "icon": "Shield"
+    }
+  ],
+  "ctaHeading": "Ready to Transform Your Engineering Projects?",
+  "ctaDescription": "Partner with HCELL Engineering for innovative solutions that drive your success.",
+  "ctaButtonText": "Get in Touch Today",
+  "ctaButtonLink": "/contact"
+}

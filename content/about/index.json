@@ -1,0 +1,37 @@
+{
+  "title": "About HCELL Engineering",
+  "heroHeading": "About HCELL Engineering",
+  "heroDescription": "Pioneering the future of integrated circuit technology since 2010.",
+  "companyStory": "HCELL Engineering was founded in 2010 by a team of visionary engineers with a passion for creating innovative integrated circuit solutions. What began as a small startup has grown into a leading provider of cutting-edge technology for various industries.\n\nOur journey has been marked by continuous innovation, research, and development. We've consistently pushed the boundaries of what's possible in circuit design, creating more efficient, powerful, and reliable solutions for our clients.\n\nToday, HCELL Engineering stands at the forefront of the industry, trusted by clients worldwide for our expertise, quality, and commitment to excellence.",
+  "companyImage": "/images/engineering-team.jpg",
+  "mission": {
+    "heading": "Our Mission",
+    "description": "To deliver innovative and reliable integrated circuit solutions that empower our clients to achieve their technological goals while maintaining the highest standards of quality and efficiency.",
+    "points": ["Quality Excellence", "Customer Satisfaction", "Technological Innovation"]
+  },
+  "vision": {
+    "heading": "Our Vision",
+    "description": "To be the global leader in integrated circuit technology, pioneering solutions that shape the future of electronics and contribute to a more connected and efficient world.",
+    "points": ["Global Leadership", "Sustainable Innovation", "Technological Advancement"]
+  },
+  "teamMembers": [
+    {
+      "name": "John Smith",
+      "position": "Chief Executive Officer",
+      "bio": "With over 20 years of experience in the industry, John leads our company with vision and expertise.",
+      "image": "/images/team-member-1.jpg"
+    },
+    {
+      "name": "Sarah Johnson",
+      "position": "Chief Technology Officer",
+      "bio": "Sarah drives our technological innovation, bringing cutting-edge solutions to life.",
+      "image": "/images/team-member-2.jpg"
+    },
+    {
+      "name": "Michael Chen",
+      "position": "Head of Research & Development",
+      "bio": "Michael leads our R&D team, constantly pushing the boundaries of what's possible in circuit design.",
+      "image": "/images/team-member-3.jpg"
+    }
+  ]
+}

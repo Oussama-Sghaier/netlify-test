@@ -1,0 +1,27 @@
+{
+  "title": "Contact HCELL Engineering",
+  "heroHeading": "Contact Us",
+  "heroDescription": "Have questions or need more information? We're here to help.",
+  "contactInfo": {
+    "address": "123 Engineering Way\nTech Park, Silicon Valley\nCA 94043, USA",
+    "phone": "+1 (555) 123-4567",
+    "email": "info@hcellengineering.com"
+  },
+  "businessHours": [
+    {
+      "days": "Monday - Friday",
+      "hours": "9:00 AM - 6:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "hours": "10:00 AM - 2:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "formHeading": "Send Us a Message",
+  "mapHeading": "Our Location",
+  "mapDescription": "Visit our headquarters in the heart of Silicon Valley."
+}

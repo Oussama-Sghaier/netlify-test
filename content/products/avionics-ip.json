@@ -1,0 +1,51 @@
+{
+  "title": "Avionics IP",
+  "slug": "avionics-ip",
+  "featuredImage": "/images/avionics-ip.jpg",
+  "description": "High-reliability integrated circuits designed specifically for aerospace applications",
+  "overview": "HCELL Engineering's Avionics IP is a comprehensive suite of integrated circuit designs specifically engineered for the demanding requirements of aerospace applications. Our IP cores are designed to meet the highest standards of reliability, performance, and safety required by the aviation industry.\n\nWith certification-ready components and extensive documentation, our Avionics IP significantly reduces development time and certification costs for aerospace systems integrators and manufacturers.",
+  "keyFeatures": [
+    {
+      "title": "DO-254 Compliant",
+      "description": "Designed to meet the rigorous requirements of DO-254 for airborne electronic hardware, simplifying the certification process.",
+      "icon": "Shield"
+    },
+    {
+      "title": "Radiation Hardened",
+      "description": "Engineered to withstand the harsh radiation environments encountered in aerospace applications, ensuring reliable operation.",
+      "icon": "Zap"
+    },
+    {
+      "title": "Low Power Consumption",
+      "description": "Optimized for minimal power consumption without compromising performance, ideal for power-constrained aerospace systems.",
+      "icon": "Cpu"
+    }
+  ],
+  "technicalSpecs": "## Performance Characteristics\n\n- Operating Temperature: -55°C to +125°C\n- Supply Voltage: 1.8V to 3.3V\n- Power Consumption: <500mW typical\n- Clock Frequency: Up to 200MHz\n- Radiation Tolerance: 100 krad (Si) TID\n\n## Certification & Standards\n\n- DO-254 Design Assurance Level A-D\n- MIL-STD-883 Compliant\n- RTCA/DO-160G Environmental Testing\n- ISO 9001:2015 Certified Manufacturing\n- ECSS-Q-ST-60C Space Product Assurance",
+  "applications": [
+    {
+      "title": "Flight Control Systems",
+      "description": "Critical systems for aircraft navigation and control",
+      "image": "/images/flight-control.jpg"
+    },
+    {
+      "title": "Communication Systems",
+      "description": "Reliable data transmission in aerospace environments",
+      "image": "/images/communication.jpg"
+    },
+    {
+      "title": "Navigation Equipment",
+      "description": "Precision positioning and guidance systems",
+      "image": "/images/navigation.jpg"
+    },
+    {
+      "title": "Satellite Electronics",
+      "description": "Durable components for space applications",
+      "image": "/images/satellite.jpg"
+    }
+  ],
+  "ctaHeading": "Ready to Integrate Our Avionics IP?",
+  "ctaDescription": "Contact our team of experts to discuss how our Avionics IP can meet your specific requirements.",
+  "ctaButtonText": "Get in Touch Today",
+  "ctaButtonLink": "/contact"
+}

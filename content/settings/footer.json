@@ -1,0 +1,26 @@
+{
+  "companyDescription": "Innovative engineering solutions for tomorrow's challenges.",
+  "quickLinks": [
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "About Us",
+      "url": "/about"
+    },
+    {
+      "label": "Avionics IP",
+      "url": "/products/avionics-ip"
+    },
+    {
+      "label": "RISC-V Processor",
+      "url": "/products/risc-v-processor"
+    },
+    {
+      "label": "Contact",
+      "url": "/contact"
+    }
+  ],
+  "copyrightText": "© 2023 HCELL Engineering. All rights reserved."
+}
