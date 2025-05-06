@@ -11,7 +11,7 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  assetPrefix: './',
+  assetPrefix: '/',
 };
 
 export default nextConfig;
